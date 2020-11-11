@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.gildedrose.GildedRoseTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-11-11T19:42:02" hostname="DESKTOP-1SPHOU6" time="0.102">
+<testsuite name="com.gildedrose.GildedRoseTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-11-11T19:47:31" hostname="DESKTOP-1SPHOU6" time="0.079">
   <properties/>
-  <testcase name="foo()" classname="com.gildedrose.GildedRoseTest" time="0.102"/>
+  <testcase name="foo()" classname="com.gildedrose.GildedRoseTest" time="0.079"/>
   <system-out><![CDATA[name, sellIn, quality
 +5 Dexterity Vest, 9, 19
 Aged Brie, 1, 1
