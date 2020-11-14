@@ -26,20 +26,20 @@ class GildedRose {
             switch (item.name) {
 
                 case "Aged Brie":
-                    IncrementItemQuality(item);
+                    incrementItemQuality(item);
                     if(item.sellIn<0)
-                        IncrementItemQuality(item);
+                        incrementItemQuality(item);
                     break;
 
                 case "Backstage passes to a TAFKAL80ETC concert":
-                    IncrementItemQuality(item);
+                    incrementItemQuality(item);
 
                     if(item.sellIn<11){
-                        IncrementItemQuality(item);
+                        incrementItemQuality(item);
                     }
 
                     if(item.sellIn<6 ){
-                        IncrementItemQuality(item);
+                        incrementItemQuality(item);
                     }
 
                     if(item.sellIn<=0){
@@ -48,12 +48,12 @@ class GildedRose {
                     break;
 
                 case "Conjured Mana Cake":
-                    DecrementItemQuality(item);
-                    DecrementItemQuality(item);
+                    decrementItemQuality(item);
+                    decrementItemQuality(item);
                     if(item.sellIn < 0)
                     {
-                        DecrementItemQuality(item);
-                        DecrementItemQuality(item);
+                        decrementItemQuality(item);
+                        decrementItemQuality(item);
                     }
                     break;
 
@@ -62,9 +62,9 @@ class GildedRose {
                     break;
 
                 default:
-                    DecrementItemQuality(item);
+                    decrementItemQuality(item);
                     if(item.sellIn<0)
-                        DecrementItemQuality(item);
+                        decrementItemQuality(item);
 
                     break;
             }
@@ -73,13 +73,13 @@ class GildedRose {
         }
     }
 
-    private void DecrementItemQuality(Item item) {
+    private void decrementItemQuality(Item item) {
         if(item.quality>0){
             item.quality-=1;
         }
     }
 
-    private void IncrementItemQuality(Item item) {
+    private void incrementItemQuality(Item item) {
         if(item.quality<50){
             item.quality+=1;
 
